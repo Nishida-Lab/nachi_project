@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="sia5" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find nachi_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find nachi_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find nachi_description)/urdf/mz07/body.urdf.xacro" />
+
+  <xacro:property name="J1_upper_limit" value="${170*M_PI/180.0}"/>
+  <xacro:property name="J1_lower_limit" value="-${J1_upper_limit}"/>
+
+ <xacro:property name="J1_velocity_limit" value="${450.0*M_PI/180.0}"/>
+
+  <xacro:link_v1 name="base_link" mass="3.0"
+           ixx="0.001" ixy="0" ixz="0"
+           iyy="0.001" iyz="0"
+           izz="0.001"/>
+
+  <xacro:link_v1 name="link_1" mass="3.0"
+           ixx="0.001" ixy="0" ixz="0"
+           iyy="0.001" iyz="0"
+           izz="0.001"/>
+
+<xacro:joint_v1 joint_name="J1"
+            parent_name="base_link" child_name="link_1"
+            ox="0" oy="0" oz="0.197"
+            roll="0" pitch="0" yaw="0"
+            ax="0" ay="0" az="1"
+            el="30.0"
+            ll="${J1_lower_limit}" ul="${J1_upper_limit}"
+            vl="${J1_velocity_limit}"
+            skp="1" skv="1"
+            sll="${J1_lower_limit}" sul="${J1_upper_limit}"/>
+</robot>

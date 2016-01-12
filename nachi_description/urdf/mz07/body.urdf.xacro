@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="link_v1" params="name mass
+                                      ixx ixy ixz
+                                      iyy iyz izz">
+    <link name="${name}">
+      <visual>
+        <geometry>
+          <mesh filename="package://nachi_description/meshes/mz07/visual/${name}.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://nachi_description/meshes/mz07/collision/${name}.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${mass}"/>
+        <inertia ixx="${ixx}" ixy="${ixy}" ixz="${ixz}" iyy="${iyy}" iyz="${iyz}" izz="${izz}" />
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="joint_v1" params="joint_name
+                     parent_name child_name
+                                       ox oy oz roll pitch yaw ax ay az
+                     el ll ul vl
+                     skp skv sll sul">
+    <joint name="${joint_name}" type="revolute">
+      <origin xyz="${ox} ${oy} ${oz}" rpy="${roll} ${pitch} ${yaw}"/>
+      <parent link="${parent_name}"/>
+      <child link="${child_name}"/>
+      <axis xyz="${ax} ${ay} ${az}"/>
+    <dynamics damping="0.7" friction="0.7"/>
+      <limit effort="${el}" lower="${ll}" upper="${ul}" velocity="${vl}"/>
+    </joint>
+  </xacro:macro>
+</robot>
