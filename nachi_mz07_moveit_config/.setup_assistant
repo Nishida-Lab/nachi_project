@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: nachi_description
+    relative_path: robots/mz07/urdf/mz07.urdf
+  SRDF:
+    relative_path: config/mz07.srdf
+  CONFIG:
+    generated_timestamp: 1452663098
