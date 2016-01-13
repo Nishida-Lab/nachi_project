@@ -1,0 +1,16 @@
+<launch>
+ # The planning and execution components of MoveIt! configured to
+ # publish the current configuration of the robot (simulated or real)
+ # and the current state of the world as seen by the planner
+ <include file="$(find nachi_mz07_moveit_config)/launch/move_group.launch">
+  <arg name="publish_monitored_planning_scene" value="true" />
+ </include>
+ 
+ <!-- <node pkg="joint_state_muxer" type="joint_state_muxer" name="joint_state_muxer" output="screen"> -->
+ <!--   <rosparam param="source_list">[joint_states]</rosparam> -->
+ <!--    </node> -->
+
+ 
+ # The visualization component of MoveIt!
+ <include file="$(find nachi_mz07_moveit_config)/launch/moveit_rviz.launch"/>
+</launch>
