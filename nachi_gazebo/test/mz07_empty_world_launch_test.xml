@@ -1,0 +1,3 @@
+<launch>
+  <include file="$(find nachi_gazebo)/launch/mz07/mz07_empty_world.launch"/>
+</launch>
