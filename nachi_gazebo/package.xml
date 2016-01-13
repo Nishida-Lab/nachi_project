@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>nachi_gazebo</name>
+  <version>1.0.0</version>
+  <description>The nachi_gazebo package</description>
+
+  <maintainer email="groadpg@gmail.com">RyodoTanaka</maintainer>
+  <license>BSD</license>
+  <url type="repository">http://github.com/Nishida-Lab/nachi_project</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>ros_control</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>nachi_control</run_depend>
+</package>
