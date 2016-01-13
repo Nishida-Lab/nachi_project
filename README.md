@@ -1,4 +1,4 @@
-# NACHI Project
+# NACHI Project [![Build Status](https://travis-ci.org/Nishida-Lab/nachi_project.svg?branch=travis)](https://travis-ci.org/Nishida-Lab/nachi_project)
 
 ![img](.image/header.png)
 
