@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 749
   - Class: rviz/Selection
@@ -83,12 +84,44 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        link_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: false
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -120,15 +153,15 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.0326473
-        Y: 0.0402745
-        Z: 0.330006
+        X: -0.0148517
+        Y: -0.018873
+        Z: 0.392207
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.495397
+      Pitch: 0.380398
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.38358
+      Yaw: 0.435399
     Saved: ~
 Window Geometry:
   Displays:
@@ -146,5 +179,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1875
-  X: 456
-  Y: 422
+  X: 35
+  Y: 14
