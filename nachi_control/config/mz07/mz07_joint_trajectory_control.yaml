@@ -4,7 +4,7 @@ mz07:
     type: joint_state_controller/JointStateController
     publish_rate: 50
   
-  sia5_controller:
+  mz07_controller:
     type: effort_controllers/JointTrajectoryController
     joints:
       - J1
