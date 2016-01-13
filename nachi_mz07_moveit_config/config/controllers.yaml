@@ -1,13 +1,12 @@
 controller_list:
-  - name: mz07/mz07_controller
+  - name: /mz07/mz07_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: true
     joints:
-      - joint_s
-      - joint_l
-      - joint_e
-      - joint_u
-      - joint_r
-      - joint_b
-      - joint_t
+      - J1
+      - J2
+      - J3
+      - J4
+      - J5
+      - J6
