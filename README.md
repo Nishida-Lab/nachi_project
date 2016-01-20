@@ -17,4 +17,9 @@ roslaunch nachi_mz07_moveit_config demo.launch
 
 [![SIA5_gazebo](.image/youtube.png)](https://youtu.be/Ic1EXZH8A8I)
 
-* まだROSで実機が動くかどうかわからないチャレンジリポジトリ！
+* まだROSで実機が動くかどうかわからないチャレンジリポジトリ！実機が動かない代わりにgazeboでそれっぽく動かす
+
+```bash
+roslaunch nachi_gazebo mz07_empty_world.launch
+roslaunch nachi_mz07_moveit_config moveit_planning_execution.launch
+```
