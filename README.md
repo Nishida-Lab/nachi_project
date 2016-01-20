@@ -23,3 +23,5 @@ roslaunch nachi_mz07_moveit_config demo.launch
 roslaunch nachi_gazebo mz07_empty_world.launch
 roslaunch nachi_mz07_moveit_config moveit_planning_execution.launch
 ```
+
+[![SIA5_gazebo](.image/youtube2.jpg)](https://youtu.be/rRNhH_FJEAM)
