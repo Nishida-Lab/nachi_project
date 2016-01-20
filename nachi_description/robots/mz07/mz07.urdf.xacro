@@ -36,40 +36,46 @@
 
   <!-- Link -->
   <link name="world"/>
-  <xacro:link_v1 name="base_link" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="base_link" mass="9.522365"
+				 ixx="0.144495" ixy="-0.000009" ixz="-0.030760"
+				 iyy="0.183352" iyz="-0.000037"
+				 izz="0.079873"/>
 
-  <xacro:link_v1 name="link_1" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_1" mass="5.616960"
+				 ixx="0.087433" ixy="0.000000" ixz="0.013287"
+				 iyy="0.073064" iyz="0.000019"
+				 izz="0.039829"/>
 
-  <xacro:link_v1 name="link_2" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_2" mass="7.350069"
+				 ixx="0.299465" ixy="-0.000010" ixz="-0.012735"
+				 iyy="0.279554" iyz="0.000053"
+				 izz="0.035911"/>
 
-  <xacro:link_v1 name="link_3" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_3" mass="3.724767"
+				 ixx="0.011733" ixy="0.000043" ixz="0.000461"
+				 iyy="0.019531" iyz="0.000024"
+				 izz="0.014154"/>
 
-  <xacro:link_v1 name="link_4" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_4" mass="3.245188"
+				 ixx="0.007141" ixy="0.000562" ixz="0.000255"
+				 iyy="0.054197" iyz="0.000024"
+				 izz="0.056111"/>
 
-  <xacro:link_v1 name="link_5" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_5" mass="0.501938"
+         ixx="0.000539" ixy="0.000001" ixz="0.000000"
+         iyy="0.000892" iyz="-0.000001"
+         izz="0.000962"/>
 
-  <xacro:link_v1 name="link_6" mass="3.0"
-				 ixx="0.001" ixy="0" ixz="0"
-				 iyy="0.001" iyz="0"
-				 izz="0.001"/>
+  <xacro:link_v1 name="link_6" mass="0.038575"
+         ixx="0.0005" ixy="0.000000" ixz="0.000000"
+         iyy="0.0005" iyz="0.000000"
+         izz="0.0005"/>
+<!--
+  <xacro:link_v1 name="link_6" mass="0.038575"
+				 ixx="0.000027" ixy="0.000000" ixz="0.000000"
+				 iyy="0.000016" iyz="0.000000"
+				 izz="0.000017"/> -->
+
   <link name="tool0"/>
 
   <!-- Joint -->
@@ -169,7 +175,7 @@
   <xacro:simple_jp_trans_v0 name="transmission_6"
   							joint_name="J6" actuator_name="motor_6"
   							reduction="1"/>
-  
+
   <!-- gazebo -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
