@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
       Splitter Ratio: 0.5
     Tree Height: 539
   - Class: rviz/Selection
@@ -148,9 +149,9 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: Arm
+        Planning Group: arm
         Query Goal State: true
-        Query Start State: true
+        Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
@@ -263,10 +264,10 @@ Visualization Manager:
         Z: 0
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.415398
+      Pitch: 0.450398
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.62358
+      Yaw: 5.45358
     Saved: ~
 Window Geometry:
   Displays:
@@ -286,5 +287,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1572
-  X: 40
-  Y: 40
+  X: 35
+  Y: 30

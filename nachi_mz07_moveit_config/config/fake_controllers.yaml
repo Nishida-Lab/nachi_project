@@ -2,7 +2,7 @@ controller_list:
   - name: fake_gripper_controller
     joints:
       []
-  - name: fake_Arm_controller
+  - name: fake_arm_controller
     joints:
       - J1
       - J2
