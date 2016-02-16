@@ -11,7 +11,7 @@
   <arg name="sensor_config" default="$(find nachi_sensor_moveit)/config/kinect2.yaml"/>
   <arg name="octomap_frame_name" default="kinect2_link"/>
   <arg name="sensor_max_range" default="4.5"/>
-  <arg name="rviz_config" default="$(find nachi_mz07_moveit_config)/launch/moveit.rviz"/>
+  <arg name="rviz_config" default="$(find nachi_mz07_moveit_config)/launch/rviz/moveit.rviz"/>
 
   <!-- The planning and execution components of MoveIt! configured to -->
   <!-- publish the current configuration of the robot (simulated or real) -->
