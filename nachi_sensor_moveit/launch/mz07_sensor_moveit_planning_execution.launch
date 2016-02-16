@@ -1,0 +1,15 @@
+<launch>
+  <include file="$(find nachi_mz07_moveit_config)/launch/moveit_planning_execution.launch">
+    <arg name="load_robot_description" value="true"/>
+    <arg name="urdf_model" value="$(find nachi_description)/robots/mz07/urdf/mz07.sensor.urdf"/>
+    <arg name="srdf_model" value="$(find nachi_sensor_moveit)/config/mz07.srdf"/>
+    <arg name="joint_limits_config" value="$(find nachi_mz07_moveit_config)/config/joint_limits.yaml"/>
+    <arg name="kinematics_config" value="$(find nachi_mz07_moveit_config)/config/kinematics.yaml"/>
+    <arg name="controllers_config" value="$(find nachi_mz07_moveit_config)/config/controllers.yaml"/>
+    <arg name="use_depth_sensor" value="true"/>
+    <arg name="sensor_config" value="$(find nachi_sensor_moveit)/config/kinect2.yaml"/>
+    <arg name="octomap_frame_name" value="kinect2_link"/>
+    <arg name="sensor_max_range" value="4.5"/>
+    <arg name="rviz_config" value="$(find nachi_sensor_moveit)/launch/rviz/mz07_moveit_sensor.rviz"/>
+  </include>
+</launch>
