@@ -2,7 +2,21 @@
 
 ![img](.image/header.png)
 
+## Install
+* Install ROS
+* ROS distribution **Indigo**
+* Create `catkin_ws`
+
+```bash
+cd catkin_ws/src
+git clone https://github.com/Nishida-Lab/nachi_project.git # This repository
+cd ..
+rosdep install -i --from-paths src # install dependent packages
+catkin_make
+```
+
 ## MZ07
+
 * rviz上でモデルを確認
 
 ```bash
