@@ -15,10 +15,9 @@ mz07:
       - J6
 
     gains: # Required because we're controlling an effort interface
-      joint_s: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_l: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_e: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_u: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_r: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_b: {p: 1, i: 0, d: 0.0, i_clamp: 0}
-      joint_t: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J1: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J2: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J3: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J4: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J5: {p: 1, i: 0, d: 0.0, i_clamp: 0}
+      J6: {p: 1, i: 0, d: 0.0, i_clamp: 0}
