@@ -12,7 +12,7 @@
         <horizontal_fov>${84.1*M_PI/180.0}</horizontal_fov>
         <!-- <vertical_fov>${53.8*M_PI/180.0}</vertical_fov> -->
         <image>
-          <format>R8G8B8</format>
+          <format>B8G8R8</format>
           <width>512</width>
           <height>424</height>
         </image>
