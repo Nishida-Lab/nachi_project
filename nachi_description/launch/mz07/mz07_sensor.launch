@@ -1,10 +1,18 @@
 <launch>
   <arg name="model" default="$(find nachi_description)/robots/mz07/mz07.sensor.urdf.xacro"/>
-  <arg name="gui" default="True" />
+  <arg name="use_gui" default="true" />
 
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'"/>
-  <param name="use_gui" value="$(arg gui)"/>
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  <param name="robot_description" command="$(find xacro)/xacro '$(arg model)'"/>
+
+  <group if="$(arg use_gui)">
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+  </group>
+
+  <group unless="$(arg use_gui)">
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  </group>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nachi_description)/launch/mz07/rviz/mz07_rviz.rviz" required="true" />
 </launch>
