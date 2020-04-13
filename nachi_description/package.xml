@@ -6,12 +6,13 @@
 
   <maintainer email="ry0@todo.todo">ry0</maintainer>
   <maintainer email="groadpg@gmail.com">RyodoTanaka</maintainer>
-  
+
   <license>BSD</license>
   <url type="repository">http://github.com/Nishida-Lab/nachi_project</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>joint_state_publisher</run_depend>
+  <run_depend>joint_state_publisher_gui</run_depend>
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>rviz</run_depend>
 </package>
